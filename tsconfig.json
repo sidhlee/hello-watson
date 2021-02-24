@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* What are we compiling into? */
+    "target": "ES6",
+    "module": "CommonJS",
+
+    /* input & output setup */
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+
+    /* Module resolution */
+    "baseUrl": "./src" /* resolve non-absolute module into */,
+    "moduleResolution": "node",
+    "esModuleInterop": true /* allow inter-operation between CommonJS and ESModule */,
+
+    /* Type checking options */
+    "strict": true,
+    "noImplicitAny": true,
+
+    /* Advanced options */
+    "skipDefaultLibCheck": true /* Skip type checking of declaration files */,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
